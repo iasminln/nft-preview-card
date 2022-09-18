@@ -1,0 +1,151 @@
+main {
+  width: 100%;
+  height: 100vh;
+  background: $dark-blue01;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: size(350);
+  border-radius: size(20);
+  background: $dark-blue02;
+  padding: size(25);
+  margin-bottom: size(20);
+
+  .container-img {
+    margin-bottom: size(20);
+    border-radius: size(12);
+    position: relative;
+    transition: 0.5s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      background: url("../../images/icon-view.svg") no-repeat center;
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      opacity: 0;
+      z-index: 999;
+    }
+
+    &:hover {
+      background: $cyan;
+      cursor: pointer;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    img {
+      border-radius: size(10);
+
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .container-text {
+    h1 {
+      color: $white;
+      font-size: size(20);
+      font-weight: 600;
+      margin-bottom: size(20);
+      width: fit-content;
+
+      &:hover {
+        color: $cyan;
+        cursor: pointer;
+      }
+    }
+
+    p {
+      color: $soft-blue;
+      font-size: size(18);
+      font-weight: 300;
+      line-height: 1.4;
+      margin-bottom: size(20);
+    }
+
+    .infos {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: size(15);
+      border-bottom: 1px solid $dark-blue03;
+      margin-bottom: size(15);
+
+      img {
+        margin-right: size(10);
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: size(11);
+          height: size(18);
+        }
+
+        span {
+          color: $cyan;
+          font-size: size(16);
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+
+      .time {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: size(17);
+          height: size(17);
+        }
+
+        span {
+          font-size: size(16);
+          color: $soft-blue;
+          font-weight: 300;
+          line-height: 1.4;
+        }
+      }
+    }
+
+    .avatar {
+      display: flex;
+      align-items: center;
+
+      span {
+        color: $soft-blue;
+        font-size: size(16);
+        font-weight: 300;
+        line-height: 1.4;
+
+        a {
+          color: $white;
+
+          &:hover {
+            color: $cyan;
+          }
+        }
+      }
+
+      img {
+        width: size(30);
+        border-radius: 100%;
+        border: 1px solid $white;
+        margin-right: size(20);
+      }
+    }
+  }
+}

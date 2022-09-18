@@ -1,0 +1,14 @@
+// Cores
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$dark-blue01: hsl(217, 54%, 11%);
+$dark-blue02: hsl(216, 50%, 16%);
+$dark-blue03: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+// Mixin
+
+@function size($size) {
+  @return ($size / 16) + rem;
+}

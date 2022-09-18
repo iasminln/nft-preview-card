@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: #8bacda;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: #0d192b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 21.875rem;
+  border-radius: 1.25rem;
+  background: #14253d;
+  padding: 1.5625rem;
+  margin-bottom: 1.25rem;
+}
+
+.modal .container-img {
+  margin-bottom: 1.25rem;
+  border-radius: 0.75rem;
+  position: relative;
+  transition: 0.5s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .container-img::before {
+  content: "";
+  background: url("../../images/icon-view.svg") no-repeat center;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  opacity: 0;
+  z-index: 999;
+}
+
+.modal .container-img:hover {
+  background: #00fff7;
+  cursor: pointer;
+}
+
+.modal .container-img:hover::before {
+  opacity: 1;
+}
+
+.modal .container-img img {
+  border-radius: 0.625rem;
+}
+
+.modal .container-img img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.modal .container-text h1 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  width: fit-content;
+}
+
+.modal .container-text h1:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.modal .container-text p {
+  color: #8bacda;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+}
+
+.modal .container-text .infos {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.9375rem;
+  border-bottom: 1px solid #2f415b;
+  margin-bottom: 0.9375rem;
+}
+
+.modal .container-text .infos img {
+  margin-right: 0.625rem;
+}
+
+.modal .container-text .infos .price {
+  display: flex;
+  align-items: center;
+}
+
+.modal .container-text .infos .price img {
+  width: 0.6875rem;
+  height: 1.125rem;
+}
+
+.modal .container-text .infos .price span {
+  color: #00fff7;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.modal .container-text .infos .time {
+  display: flex;
+  align-items: center;
+}
+
+.modal .container-text .infos .time img {
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
+
+.modal .container-text .infos .time span {
+  font-size: 1rem;
+  color: #8bacda;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.modal .container-text .avatar {
+  display: flex;
+  align-items: center;
+}
+
+.modal .container-text .avatar span {
+  color: #8bacda;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.modal .container-text .avatar span a {
+  color: white;
+}
+
+.modal .container-text .avatar span a:hover {
+  color: #00fff7;
+}
+
+.modal .container-text .avatar img {
+  width: 1.875rem;
+  border-radius: 100%;
+  border: 1px solid white;
+  margin-right: 1.25rem;
+}

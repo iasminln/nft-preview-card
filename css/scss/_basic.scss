@@ -1,0 +1,12 @@
+.attribution {
+  font-size: size(11);
+  text-align: center;
+  color: $white;
+}
+.attribution a {
+  color: $soft-blue;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
