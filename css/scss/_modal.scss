@@ -19,10 +19,10 @@ main {
     margin-bottom: size(20);
     border-radius: size(12);
     position: relative;
-    transition: 0.5s ease-out;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 
     &::before {
       content: "";
@@ -31,7 +31,7 @@ main {
       height: 48px;
       position: absolute;
       opacity: 0;
-      z-index: 999;
+      transition: 0.5s;
     }
 
     &:hover {
@@ -40,11 +40,13 @@ main {
 
       &::before {
         opacity: 1;
+        z-index: 9;
       }
     }
 
     img {
       border-radius: size(10);
+      transition: 0.5s;
 
       &:hover {
         opacity: 0.5;

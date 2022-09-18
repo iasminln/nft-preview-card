@@ -54,10 +54,10 @@ main {
   margin-bottom: 1.25rem;
   border-radius: 0.75rem;
   position: relative;
-  transition: 0.5s ease-out;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
 
 .modal .container-img::before {
@@ -67,7 +67,7 @@ main {
   height: 48px;
   position: absolute;
   opacity: 0;
-  z-index: 999;
+  transition: 0.5s;
 }
 
 .modal .container-img:hover {
@@ -77,10 +77,12 @@ main {
 
 .modal .container-img:hover::before {
   opacity: 1;
+  z-index: 9;
 }
 
 .modal .container-img img {
   border-radius: 0.625rem;
+  transition: 0.5s;
 }
 
 .modal .container-img img:hover {
